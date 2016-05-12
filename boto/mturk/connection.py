@@ -858,7 +858,6 @@ class MTurkConnection(AWSQueryConnection):
         Returns a comma+space-separated string of keywords from either
         a list or a string
         """
-        print("KEYWORDTYPE", type(keywords))
         if isinstance(keywords, list):
             keywords = ', '.join(keywords)
         if isinstance(keywords, str):
